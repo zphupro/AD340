@@ -9,6 +9,38 @@
     android:padding="15dp"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/passButton5"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="Print "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBox" />
+
+    <Button
+        android:id="@+id/passButton4"
+        android:layout_width="368dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBox" />
+
+    <Button
+        android:id="@+id/passButton3"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="GO Movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBox" />
+
     <EditText
         android:id="@+id/textBox"
         android:layout_width="368dp"
@@ -23,12 +55,24 @@
 
     <Button
         android:id="@+id/passButton"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/go"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="272dp"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textBox" />
+
+    <Button
+        android:id="@+id/passButton2"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:text="Exit "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBox" />
+
 </android.support.constraint.ConstraintLayout>
