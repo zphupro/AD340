@@ -6,5 +6,7 @@
     <string name="year">Years:</string>
 
     <string name="Movies">Go movie</string>
-
+    <string name="Hello">Hello</string>
+    <string name="Fun">Fun</string>
+    <string name="Mores">Mores</string>
 </resources>
