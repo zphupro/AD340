@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".MoviesList"></activity>
+
+        <activity android:name=".Movieitem"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
