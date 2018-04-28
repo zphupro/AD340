@@ -1,5 +1,6 @@
 package biz.zphu.activity_first;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -88,7 +89,28 @@ public class Movieitem extends AppCompatActivity {
                v.setOnClickListener(new View.OnClickListener(){
                    @Override  public void  onClick(View v){
                        int pos = getAdapterPosition();
-                       Toast.makeText(itemView.getContext(), movies[pos][0], Toast.LENGTH_SHORT).show();
+                      // Toast.makeText(itemView.getContext(), movies[pos][0], Toast.LENGTH_SHORT).show();
+
+                       Intent intent = new Intent(Movieitem.this, MoviesList.class);
+
+                       //Create the bundle
+                       Bundle bundle = new Bundle();
+
+                       //pass the string of array into bundle
+                       bundle.putString("movieTitle", movies[pos][0]);
+                       bundle.putString("movieDescription", movies[pos][4]);
+
+                       //Add the bundle to the intent
+                       intent.putExtras(bundle);
+
+                       startActivity(intent);
+
+
+
+
+
+
+
 
                    }
 

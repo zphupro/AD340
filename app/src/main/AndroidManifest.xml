@@ -21,6 +21,11 @@
             android:parentActivityName=".MainActivity">
         </activity>
 
+
+        <activity android:name=".MoviesList"
+            android:parentActivityName=".Movieitem">
+
+        </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 
