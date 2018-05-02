@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">activity_first</string>
+    <string name="enter_your_message">Enter Your Message</string>
+    <string name="go">Go</string>
+    <string name="Moviename">Movie tittle</string>
+    <string name="year">Years:</string>
+
+    <string name="Movies">Go movie</string>
+    <string name="Hello">Hello</string>
+    <string name="Fun">Fun</string>
+    <string name="Mores">Mores</string>
+    <string name="title_activity_nav">nav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="about_us">
+        "hello this is my first app 1.1.0 version\n"
+        "and this is best app i ever made thank for\n"
+        "try if it does not work let me know thank you."
+    </string>
+
+
+</resources>
