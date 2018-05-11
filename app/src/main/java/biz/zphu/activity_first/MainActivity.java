@@ -1,6 +1,8 @@
 package biz.zphu.activity_first;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -24,21 +26,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+// Set up Shared Preference
+        SharedPreferences preferences = getSharedPreferences(getString(R.string.save_message) , Context.MODE_PRIVATE);
+        textBox = (EditText) findViewById(R.id.textBox2) ;
 
-//                textBox = (EditText)findViewById(R.id.textBox2);
-//                passButton = (Button)findViewById(R.id.passButton);
-//
-//                passButton.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        String str = textBox.getText().toString();
-//
-//                        Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
-//                        intent.putExtra("message", str);
-//
-//                        startActivity(intent);
-//                    }
-//                });
+        String message = "";
+        String saveText = preferences.getString(getString(R.string.text) , message);
+        textBox.setText(saveText);
 
 
 
@@ -59,7 +53,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
+    public void sendMessage(View view){
+        textBox = (EditText)findViewById(R.id.textBox2);
+               passButton = (Button)findViewById(R.id.passButton);
+        String str = textBox.getText().toString();
+        // check if string is valid
 
+        // if string is valid, save in shared prefs & navigate to other activity
+        if (noname(str)) {
+        Context context = getApplication();
+        SharedPreferences preferences = getSharedPreferences(getString(R.string.save_message), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putString(getString(R.string.text) , str);
+        editor.apply();
+
+                    Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+                       intent.putExtra("message", str);
+
+                      startActivity(intent);
+
+    }else{
+
+                Toast.makeText(getApplicationContext(), "Please, Enter a valid text", Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
+    public boolean noname (String str) {
+        return !str.isEmpty();
+    }
 
     public void movieinfo(View view) {
         Intent intent = new Intent(this, Movieitem.class);

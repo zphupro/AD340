@@ -50,17 +50,17 @@
         android:layout_width="320dp"
         android:layout_height="36dp"
         android:layout_marginTop="104dp"
+        android:onClick="sendMessage"
         android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Let go " />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textBox2"
         android:layout_width="320dp"
-        android:layout_height="33dp"
+        android:layout_height="41dp"
         android:layout_marginTop="44dp"
         android:hint="@string/enter_your_message"
         android:inputType=""
