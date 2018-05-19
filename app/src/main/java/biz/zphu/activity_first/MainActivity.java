@@ -160,6 +160,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(this, Movieitem.class);
             startActivity(intent);
         }
+
+        else if(id==R.id.livecam){
+            Intent intent = new Intent(this, Maincam.class);
+            startActivity(intent);
+        }
+
 //        if (id == R.id.nav_camera) {
 //            // Handle the camera action
 //        } else if (id == R.id.nav_gallery) {

@@ -26,6 +26,8 @@
         "and this is best app i ever made thank for\n"
         "try if it does not work let me know thank you."
     </string>
+    <string name="camera_ownership">camera_ownership</string>
+    <string name="camera_label">camera_label</string>
 
 
 </resources>

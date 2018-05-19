@@ -12,8 +12,12 @@
         android:title="About" />
 
      <item
-         android:id="@+id/movies"
-         android:title="Movies"/>
+        android:id="@+id/movies"
+        android:title="Movies"/>
+
+        <item
+            android:id="@+id/livecam"
+            android:title="Livecam"/>
     </group>
     <!--
     <group android:checkableBehavior="single">
