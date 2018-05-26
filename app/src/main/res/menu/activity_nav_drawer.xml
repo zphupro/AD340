@@ -18,6 +18,10 @@
         <item
             android:id="@+id/livecam"
             android:title="Livecam"/>
+
+        <item
+            android:id="@+id/maplocation"
+            android:title="maplocation"/>
     </group>
     <!--
     <group android:checkableBehavior="single">

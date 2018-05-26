@@ -28,6 +28,7 @@
     </string>
     <string name="camera_ownership">camera_ownership</string>
     <string name="camera_label">camera_label</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

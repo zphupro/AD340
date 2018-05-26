@@ -18,9 +18,9 @@ import static java.util.Objects.requireNonNull;
 class CamAdapter extends RecyclerView.Adapter<CamAdapter.Webcametrafficviewholder>  {
 
 
-    Context context;
-    ArrayList<Camhelper> Webcamearrayprocess;
-    ArrayList<Camhelper> Getlistinsaprate;
+     private Context context;
+    private ArrayList<Camhelper> Webcamearrayprocess;
+    private ArrayList<Camhelper> Getlistinsaprate;
 
     //create an adapter
     CamAdapter(Context context, ArrayList<Camhelper> trafficCamArrayList){
@@ -55,9 +55,9 @@ class CamAdapter extends RecyclerView.Adapter<CamAdapter.Webcametrafficviewholde
     @Override
     public void onBindViewHolder(@NonNull Webcametrafficviewholder holder, int position) {
         Camhelper trafficCam = Webcamearrayprocess.get(position);
-        String imageURL = trafficCam.getWebcamephoto();
-        String Webcamdetails = trafficCam.getWebcametittle();
-        String Webcametype = trafficCam.getWebcamelocation();
+        String imageURL = trafficCam.getImage();
+        String Webcamdetails = trafficCam.getLabel();
+        String Webcametype = trafficCam.getType();
         requireNonNull(holder).WebcameLocation.setText(Webcametype);
 
         with(context).load(imageURL).fit().centerInside().into(holder.Webcamephoto);

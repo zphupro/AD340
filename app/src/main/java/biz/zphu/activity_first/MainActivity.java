@@ -166,6 +166,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         }
 
+        else if(id==R.id.maplocation){
+            Intent intent = new Intent(this, MapsActivity.class);
+            startActivity(intent);
+        }
+
+
 //        if (id == R.id.nav_camera) {
 //            // Handle the camera action
 //        } else if (id == R.id.nav_gallery) {

@@ -16,6 +16,7 @@
         android:layout_marginLeft="128dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="324dp"
+        android:background="?android:attr/colorPrimary"
         android:text="@string/go"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,6 +29,7 @@
         android:layout_marginLeft="28dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="324dp"
+        android:background="?android:attr/textColorLinkInverse"
         android:text="@string/go"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,6 +42,7 @@
         android:layout_marginLeft="128dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="252dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="@string/go"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -49,11 +52,11 @@
         android:id="@+id/passButton9"
         android:layout_width="320dp"
         android:layout_height="36dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="152dp"
+        android:background="@color/colorPrimary"
         android:onClick="sendMessage"
         android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +64,7 @@
         android:id="@+id/textBox2"
         android:layout_width="320dp"
         android:layout_height="41dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="92dp"
         android:hint="@string/enter_your_message"
         android:inputType=""
         app:layout_constraintBottom_toTopOf="@+id/passButton"
@@ -77,10 +80,39 @@
         android:layout_marginLeft="28dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="252dp"
+        android:background="@color/colorPrimary"
         android:onClick="movieinfo"
         android:text="@string/Movies"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Go movie " />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.constraint.ConstraintLayout>

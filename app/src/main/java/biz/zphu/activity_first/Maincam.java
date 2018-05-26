@@ -20,7 +20,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 
-class Maincam extends AppCompatActivity  {
+public class Maincam extends AppCompatActivity  {
 
     String url;
 
