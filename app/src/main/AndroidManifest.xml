@@ -34,7 +34,7 @@
             android:name=".Movieitem"
             android:parentActivityName=".MainActivity"></activity>
         <activity
-            android:name=".MoviesList"
+            android:name=".MovieDetails"
             android:parentActivityName=".Movieitem"></activity>
         <activity
             android:name=".Aboutapp"

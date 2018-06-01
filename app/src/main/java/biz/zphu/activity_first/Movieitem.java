@@ -101,7 +101,7 @@ public class Movieitem extends AppCompatActivity {
                        int pos = getAdapterPosition();
                       // Toast.makeText(itemView.getContext(), movies[pos][0], Toast.LENGTH_SHORT).show();
 
-                       Intent intent = new Intent(Movieitem.this, MoviesList.class);
+                       Intent intent = new Intent(Movieitem.this, MovieDetails.class);
 
                        //Create the bundle
                        Bundle bundle = new Bundle();
@@ -140,7 +140,7 @@ public class Movieitem extends AppCompatActivity {
                                                        int viewType) {
             // create a new view
             View v = (View) LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.activity_movie_item, parent, false);
+                    .inflate(R.layout.activity_movies_items, parent, false);
 
             ViewHolder vh = new MyAdapter.ViewHolder(v);
             return vh;
