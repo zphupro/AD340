@@ -53,7 +53,7 @@
         android:layout_width="320dp"
         android:layout_height="36dp"
         android:layout_marginTop="152dp"
-        android:background="@color/colorPrimary"
+        android:background="@android:color/holo_green_dark"
         android:onClick="sendMessage"
         android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"

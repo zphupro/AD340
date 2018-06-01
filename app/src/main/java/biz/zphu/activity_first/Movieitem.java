@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -54,8 +56,12 @@ public class Movieitem extends AppCompatActivity {
         // in content do not change the layout size of the RecyclerView
         mRecyclerView.setHasFixedSize(true);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.movie_lists_toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Movie Details");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(this);
@@ -158,17 +164,34 @@ public class Movieitem extends AppCompatActivity {
         }
     }
 
+//Menu Setting
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            Toast.makeText(getApplicationContext(), "Setting Clicked", Toast.LENGTH_SHORT).show();
+
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
 
 
-
-
-
-
-
-
-
+    }
 
 
 
